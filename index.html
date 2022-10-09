@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width initial-scale=1,shrink-to-fit=no">
+    <title>Task 4. Lukyanenko Alla 21/1</title>
+    <script src="script5.js" defer></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="d-flex flex-column">
+      <div id="header" class="col-sm-12 p-1 order-md-0 mx-auto">
+        <header>
+          <img class="p-2 m-0.5 float-left" src="img.png" alt="There is an image" />
+          <h1 class="text-center">My second task in html</h1>
+          <h3 class="text-center">By Lukyanenko Alla</h3>
+        </header>
+      </div>
+      <div id="nav" class="col-sm-12 text-center p-1 order-md-1 order-sm-1 mx-auto">
+        <nav>
+          <ul id="ul">
+            <li class="d-md-inline"><a href="#priceOfOrderField">price of order</a></li>
+            <li class="d-md-inline"><a href="#links">links</a></li>
+            <li class="d-md-inline"><a href="#table">table</a></li>
+            <li class="d-md-inline"><a href="#form">html form</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="priceOfOrderField" class="col-sm-12 text-center col-md-7 p-1 order-md-2 mx-auto">
+        <p id="result"></p>
+        <form>
+          <input name="priceOfOne" type="text">
+          <input name="quantity" type="text">
+          <button id="CalculateButton">Calculate</button>
+        </form>
+      </div>
+    <div id="links" class="col-sm-12 col-md-7 p-1 order-md-3 mx-auto">
+        <h2  class="text-center">List of examples</h2>
+        <ol>
+          <li><a href="http://example.com/">Example1</a></li>
+          <li><a href="https://example.com/">Example2</a></li>
+          <li><a href="ftp://example.com/">Example2</a></li>
+          <li><a href="ftp://example.com/user:123@example.com">Example4</a></li>
+          <li><a href="https://example.com/page#about">Example5</a></li>
+          <li><a href="#about">Example6</a></li>
+          <li><a href="https://someshop.ru/catalog/phone?page=1&perpage=20">Example6</a></li>
+          <li>Example7
+              <ul>
+                  <li><a href="#about" title="Read info">About this page</a></li>
+                  <li><a href="#creator" title="Nickname and id">Creator of this page</a></li>
+                  <li><a href="#contacts" title="Email and phone number">Contacts </a></li>
+              </ul>
+          </li>
+          <li><a>http://example.com/ (Example9)</a></li>
+          <li><a href="">Example10</a></li>
+          <li><a href="https://example.ru" rel="nofollow">Example11</a></li>
+          <li><!--noindex--><a href="https://example.ru">Example12</a><!--noindex--></li>
+          <li><p>If you want to go to example page click <a href="https://example.ru">here</a> (Example13)</p></li>
+          <li>
+              <p><a href="shttps://example.ru"><img src="https://i.ytimg.com/vi/z5tEAmdULJY/maxresdefault.jpg" width="50" 
+                  height="30" title="Example14"></a></p>
+          </li>
+          <li>Example15
+              <map id="Nav" name="Nav">
+                  <area shape="circle" coords="113,24,211" alt="1" href="https://example.ru">
+                  <area shape="rect" coords="210,24,233,100" alt="2" href="http://example.ru">
+                </map>
+          </li>
+          <li><a href="page">Example16</a></li>
+          <li><a href="about/page">Example17</a></li>
+          <li><a href="./page">Example18</a></li>
+          <li><a href="../page">Example19</a></li>
+          <li><a href="/">Example20</a></li>
+          <li><a href="/page">Example21</a></li>
+      </ol>
+    </div>
+    <div id = "form" class="col-sm-12 col-md-7 text-center p-1 order-md-5 mx-auto">
+      <h2 class="text-center">HTML form</h2>
+
+      <form action="/"
+        method="POST">
+
+        <label>
+          1. Your name:<br />
+          <input name="name"
+          placeholder="Ivan Ivanov" />
+        </label><br />
+
+        <label >
+          2. Your email:<br />
+          <input name="email"
+            type="email"
+            placeholder="user@example.com" />
+        </label><br />
+
+        <label>
+          3. Date of birth:<br />
+          <input name="date"
+            value="2022-09-09"
+            type="date" />
+        </label><br />
+
+          4. Your civility:<br/>
+        <label><input type="radio" checked="checked"
+          name="civility" value="female" />
+          female</label>
+        <label><input type="radio"
+          name="civility" value="male" />
+          male</label><br />
+          5. Number of limbs:<br/>
+        <label><input type="radio" checked="checked"
+          name="bodyparts" value="2" />
+          2</label>
+        <label><input type="radio"
+          name="bodyparts" value="3" />
+          3</label><br />
+        <label><input type="radio"
+          name="bodyparts" value="4" />
+          4</label><br />
+        <label><input type="radio"
+          name="bodyparts" value="cannot count" />
+          cannot count</label><br />
+        <label>
+          6. Your superpower (pick one or more):
+          <br />
+          <select name="superpower"
+              multiple="multiple">
+              <option value="none" selected="selected">none</option>
+              <option value="immortality">immortality</option>
+              <option value="invisibility">invisibility</option>
+              <option value="levitation">levitation</option>
+          </select>
+          </label><br />
+          <label>
+          7. Your biography:<br />
+            <textarea name="field-name-2">Enter here</textarea>
+            </label><br />
+            
+          8.<label><input type="checkbox" checked="checked"
+            name="check" />
+            read and understood</label>
+
+          <input type="submit" value="Send" />
+        </form>
+      </div>
+      <div id="table" class="col-md-7 col-sm-12 p-1 order-md-4 mx-auto">
+        <table class="mx-auto">
+          <caption><h2 class="text-center">Table</h2></caption>
+          <tr>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+          </tr>
+          <tr>
+            <td colspan=3>United boxes(11 12 13)</td>
+          </tr>
+          <tr>
+            <td>Box 21</td>
+            <td>Box 22</td>
+            <td>Box 23</td>
+          </tr>
+          <tr>
+            <td>Box 31</td>
+            <td>Box 32</td>
+            <td>Box 33</td>
+          </tr>
+          <tr>
+            <td>Box 41</td>
+            <td colspan=2>United boxes(42 43)</td>
+          </tr>
+          <tr>
+            <td>Box 51</td>
+            <td>Box 52</td>
+            <td>Box 53</td>
+          </tr>
+        </table>
+      </div>
+      <div id="footer" class="col-sm-12 text-center p-1 order-md-6 mx-auto">
+        <footer>
+          Copyright Lukyanenko Alla 2022
+        </footer>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
