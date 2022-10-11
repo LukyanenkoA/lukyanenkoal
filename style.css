@@ -17,11 +17,12 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color:rgb(230, 141, 206); 
   }
-  input, select, textarea{
+  input{
     font-size:15px;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(241, 193, 231);
     border: 1px solid black;
+    width: 65px;
   }
  #CalculateButton{
   font-size:15px;
