@@ -6,6 +6,7 @@ function calc() {
         let count = form.elements['count' + i].value;
         if(!count.match(regex)){
             alert("Are you crazy? Enter correct");
+            break;
         }
     }
     let result = document.getElementById("result");
