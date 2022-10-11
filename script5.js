@@ -13,9 +13,7 @@ function calc() {
     for(let i = 0; i<8; i++){
         sum+=form.elements['price' + i].value * form.elements['count' + i].value;
     }
-    else {
-        result.innerHTML = "Total cost: " + sum;
-    }
+    result.innerHTML = "Total cost: " + sum;
 }
 window.addEventListener("DOMContentLoaded", function (event) {
   console.log("DOM fully loaded and parsed");
